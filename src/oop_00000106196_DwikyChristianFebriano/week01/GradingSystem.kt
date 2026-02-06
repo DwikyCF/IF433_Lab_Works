@@ -24,7 +24,6 @@ fun main() {
     println("Panjang ID: $idLength")
 
 
-
 }
 
 fun calculateStatus(score: Int) = if (score > 75) "Lulus" else "Tidak Lulus"

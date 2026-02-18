@@ -1,24 +1,23 @@
 package oop_00000106196_DwikyChristianFebriano.week03
 
 fun main() {
-    println("--- WEAPON TESTING ---")
+    println("--- PLAYER LEVELING ---")
 
-    // 1. Objek Weapon
-    val w = Weapon("KYRROW")
-    println("Nama Senjata: ${w.name}")
-    println("Damage Awal : ${w.damage}")
+    // 1. Player Baru
+    val p = Player("Dwiky")
+    println("Player dibuat: ${p.username}")
+    println("Level awal: ${p.level}")
 
-    // 2. Input Negatif
-    println("\nSet damage ke -50")
-    w.damage = -50
-    println("Damage sekarang: ${w.damage} (tetap 0)")
+    // 2. Test Encapsulation (Private XP)
+    println("Status XP: Aman, tidak bisa diakses langsung.")
 
-    // 3. Input Overpowered
-    println("\n[Test 2] Set damage ke 9999")
-    w.damage = 9999
-    println("Damage sekarang: ${w.damage} ( mentok 1000)")
+    // 3. Test Tambah XP
+    println("\n[Action] Menambah 50 XP")
+    p.addXp(50)
+    println("Level saat ini: ${p.level} (Harusnya masih 1)")
 
-    // 4. Print Tier
-    println("\n Cek Tier Senjata")
-    println("Status Tier: ${w.tier}")
+    // 4. Test Level Up
+    println("\n[Action] Menambah 60 XP lagi")
+    p.addXp(60)
+    println("Level Akhir: ${p.level} (Harusnya sudah 2)")
 }

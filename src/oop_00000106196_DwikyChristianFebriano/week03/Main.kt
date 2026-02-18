@@ -1,14 +1,16 @@
 package oop_00000106196_DwikyChristianFebriano.week03
 
 fun main() {
+    println("--- APLIKASI KARYAWAN ---")
+
     val e = Employee("Budi")
+
     println("--- Test Validasi Gaji ---")
-    e.salary = -1000
     e.salary = 5000000
-    println("Gaji Akhir: ${e.salary}")
+    println("Gaji: ${e.salary}")
 
     println("\n--- Test Enkapsulasi ---")
-    e.increasePerformance() // Rating naik jadi 4
+    e.increasePerformance()
     e.printStatus()
 
     println("\n--- Test Computed Property ---")

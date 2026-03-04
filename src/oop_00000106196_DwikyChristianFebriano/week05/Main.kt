@@ -24,7 +24,7 @@ package oop_00000106196_DwikyChristianFebriano.week05
     }
 }*/
 
-fun main () {
+/*fun main () {
     println("\n=== TESTING MATH HELPER  ===")
     val math = MathHelper() // Instansiasi objek MathHelper
 
@@ -33,5 +33,19 @@ fun main () {
     println("Luas Persegi Panjang (Panjang = 5 , Lebar = 10): ${math.hitungLuas(5, 10)}")
 
     println("Luas Lingkaran (Jari Jari = 7.0): ${math.hitungLuas(7.0)}")
+}*/
+
+fun main () {
+    println("\n=== TESTING PAYMENT METHOD ===")
+
+    val myEWallet = EWallet("Dwiky Wallet", 50000.0)
+    val myCreditCard = CreditCard("Dwiky Card", 100000.0)
+
+    val daftarPembayaran: List<PaymentMethod> = listOf(myEWallet, myCreditCard)
+
+    for (metode in daftarPembayaran) {
+        println("Memproses pembayaran dengan ${metode.accountName}...")
+        metode.processPayment(75000.0)
+    }
 }
 

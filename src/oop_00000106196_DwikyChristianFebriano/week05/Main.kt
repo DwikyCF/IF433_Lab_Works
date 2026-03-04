@@ -34,3 +34,4 @@ fun main () {
 
     println("Luas Lingkaran (Jari Jari = 7.0): ${math.hitungLuas(7.0)}")
 }
+

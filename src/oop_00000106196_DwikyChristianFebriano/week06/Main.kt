@@ -18,4 +18,12 @@ fun main() {
     println("\n=== TESTING CHECKOUT ===")
     processCheckout(method = pay1, amount = 50000.0)
     processCheckout(method = pay2, amount = 150000.0)
+
+    println("\n=== TESTING SMART HOME SYSTEM ===")
+
+    val lamp = SmartLamp(id = "L-01", name = "Ruang Tamu")
+    val speaker = SmartSpeaker(id = "S-01", name = "Google Nest Dapur")
+    val cctv = SmartCCTV(id = "C-01", name = "Ezviz Garasi")
+
+    println("Perangkat berhasil disiapkan!")
 }

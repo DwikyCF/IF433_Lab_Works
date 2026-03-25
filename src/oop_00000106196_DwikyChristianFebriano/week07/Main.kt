@@ -53,6 +53,16 @@ package oop_00000106196_DwikyChristianFebriano.week07
         println("Rarity: ${firstWeapon.item.rarity}")
         println("Durability: ${firstWeapon.durability}")
 
+        println("\n--- Simulasi Blacksmith & Event Pertarungan ---")
+
+        val upgradedItem = firstWeapon.item.copy(damage = 25)
+        println("Senjata di-upgrade di Blacksmith menjadi: $upgradedItem")
+
+        println("\n>> Memulai petualangan...")
+        processEvent(BattleState.SafeZone)
+        processEvent(BattleState.MonsterEncounter("Goblin Nakal"))
+        processEvent(BattleState.LootDropped(upgradedItem))
+        processEvent(BattleState.GameOver("Terkena jebakan racun"))
 
     }
 

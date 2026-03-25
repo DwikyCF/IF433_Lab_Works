@@ -1,6 +1,6 @@
 package oop_00000106196_DwikyChristianFebriano.week07
     fun main() {
-        println("=== TEST SINGLETON ===")
+        /*println("=== TEST SINGLETON ===")
         println("Status: ${DatabaseManager.connectionStatus}")
         DatabaseManager.connect()
 
@@ -35,7 +35,11 @@ package oop_00000106196_DwikyChristianFebriano.week07
             ApiResponse.Loading -> "Tampilkan Spinner"
         }
 
-        println(uiMessage)
+        println(uiMessage)*/
+
+        println("\n=== SIMULASI GAME RPG ===")
+        GameManager.startGame()
+        GameManager.startGame()
 
 
     }

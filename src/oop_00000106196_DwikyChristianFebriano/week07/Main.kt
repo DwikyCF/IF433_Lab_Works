@@ -41,6 +41,18 @@ package oop_00000106196_DwikyChristianFebriano.week07
         GameManager.startGame()
         GameManager.startGame()
 
+        println("\n--- Simulasi Enum & Factory ---")
+
+        println("Peluang mendapatkan item LEGENDARY: ${ItemRarity.LEGENDARY.dropChance}%")
+
+        val firstWeapon = Weapon.forgeStarterSword()
+
+        println("Berhasil membuat senjata!")
+        println("Nama: ${firstWeapon.item.name}")
+        println("Damage: ${firstWeapon.item.damage}")
+        println("Rarity: ${firstWeapon.item.rarity}")
+        println("Durability: ${firstWeapon.durability}")
+
 
     }
 

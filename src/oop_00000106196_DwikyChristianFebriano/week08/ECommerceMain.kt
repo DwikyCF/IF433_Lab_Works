@@ -16,7 +16,7 @@ fun main() {
 
     val parser = ApiParser()
 
-    println("=== MEMULAI PROSES BATCH E-COMMERCE ===")
+    println("=== MEMULAI PROSES BATCH E-COMMERCE ===") //Test Pipeline Berhasil Dijalankan
 
     for (raw in rawApiData) {
         try {

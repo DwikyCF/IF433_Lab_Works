@@ -15,6 +15,8 @@ fun main() {
         "Transaksi Valid. Harga: Rp$price, Pajak: Rp$tax"
     } ?: "Transaksi Invalid: Harga belum di-set!"
 
+    println(receipt)
+
     println("\n=== TEST SAFE CASTING ===")
     val mixedData: List<Any> = listOf(
         "Smartphone",
@@ -37,5 +39,4 @@ fun main() {
     val safeString = someObject as? String ?: "Unknown String"
     println("Hasil cast + fallback: $safeString")
 
-    println(receipt)
 }

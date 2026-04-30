@@ -15,3 +15,7 @@ class WalletRepository<T> {
         return items.filter(predicate)
     }
 }
+
+fun <T : Any> findFirst(list: List<T>, predicate: (T) -> Boolean): T? {
+    return list.firstOrNull(predicate)
+}

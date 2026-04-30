@@ -8,3 +8,6 @@ fun <T> processData(input: T): T {
     return input
 }
 
+fun <T> getMax(a: T, b: T): T where T : Comparable<T> {
+    return if (a > b) a else b
+}

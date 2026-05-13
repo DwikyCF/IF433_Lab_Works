@@ -33,6 +33,17 @@ fun main() {
     } catch (e: Exception) {
         println("ALERT: Kesalahan tidak terduga — ${e.message}")
     } finally {
-        println("Siklus pengecekan dispenser pagi selesai.") }
+        println("Siklus pengecekan dispenser pagi selesai.")
+    }
+
+    println("\n=== JADWAL MAKAN SORE ===")
+    val eveningResult = runCatching {
+        dispenseKibble(
+            requestedGram = 30,
+            availableGram = 1000,
+            isJammed = false
+        )
+    }
+
 }
 

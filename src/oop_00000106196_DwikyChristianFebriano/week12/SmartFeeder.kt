@@ -19,7 +19,7 @@ fun dispenseKibble(requestedGram: Int, availableGram: Int, isJammed: Boolean): I
 fun main() {
     var currentKibbleStock = 50
 
-    println("=== JADWAL MAKAN PAGI ===")
+    println("=== JADWAL MAKAN PAGI ===") //jadwal makan pagi
     try {
         currentKibbleStock = dispenseKibble(
             requestedGram = 80,
@@ -36,7 +36,7 @@ fun main() {
         println("Siklus pengecekan dispenser pagi selesai.")
     }
 
-    println("\n=== JADWAL MAKAN SORE ===")
+    println("\n=== JADWAL MAKAN SORE ===") //jadwal makan sore
     val eveningResult = runCatching {
         dispenseKibble(
             requestedGram = 30,

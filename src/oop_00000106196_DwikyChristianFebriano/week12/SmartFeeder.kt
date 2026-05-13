@@ -18,5 +18,20 @@ fun dispenseKibble(requestedGram: Int, availableGram: Int, isJammed: Boolean): I
 
 fun main() {
     var currentKibbleStock = 50
+
+    println("=== JADWAL MAKAN PAGI ===")
+    try {
+        currentKibbleStock = dispenseKibble(
+            requestedGram = 80,
+            availableGram = currentKibbleStock,
+            isJammed = false
+        )
+    } catch (e: DispenserJamException) {
+        println("ALERT: ${e.message}")
+    } catch (e: FoodEmptyException) {
+        println("ALERT: ${e.message}")
+    } catch (e: Exception) {
+        println("ALERT: Kesalahan tidak terduga — ${e.message}")
+    }
 }
 
